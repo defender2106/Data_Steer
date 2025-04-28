@@ -8,7 +8,7 @@ class Ingest:
 
     def ingest_data(self):
         print("Ingetion data from local source")
-        customerdf=self.spark.read.csv("file:////C:/Bigdata_Mithun/Pyspark/Documents/DATASETS/usdata.csv",header= True)
+        customerdf=self.spark.read.csv("file:////C:/Bigdata_Mithun/Pyspark/Documents/DATASETS/customer_records.csv",header= True)
         customerdf.show()
         return customerdf
 
