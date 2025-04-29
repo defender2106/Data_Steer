@@ -11,5 +11,6 @@ class Transformation:
         print("Transformation in pyspark is in process")
 
         df1=df.na.drop()
+        print(df1.count())
         df1.show()
-        return df1.show()
+        return df1

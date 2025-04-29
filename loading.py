@@ -7,7 +7,6 @@ class Loading:
 
     def save_data(self,df):
         print("load the data")
-        self.df=df
-        df.write.option("header","true").csv("file:////C:/Bigdata_Mithun/Pyspark/Documents/DATASETS/usdata2.csv")
-
+        df.write.option("header", "true").csv("file:///C:/Bigdata_Mithun/Pyspark/Documents/DATASETS/usdata2.csv")
+        print("successfully Loaded")
 

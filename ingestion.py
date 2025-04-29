@@ -10,6 +10,7 @@ class Ingest:
         print("Ingetion data from local source")
         customerdf=self.spark.read.csv("file:////C:/Bigdata_Mithun/Pyspark/Documents/DATASETS/customer_records.csv",header= True)
         customerdf.show()
+        print(customerdf.count())
         return customerdf
 
 
